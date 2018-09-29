@@ -19,7 +19,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
         $check = hash('md5', $salt.$_POST['pass']);
         if ( $check == $stored_hash ) {
             // Redirect the browser to game.php
-            header("Location: add.php".urlencode($_POST['ninyoh@yahoo.com']));
+            header("Location: add.php".urlencode($_POST['elreyjonel@gmail.com']));
             return;
         } else {
             $failure = "Incorrect password";
@@ -33,7 +33,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <html>
 <head>
 <?php require_once "bootstrap.php"; ?>
-<title>Ninyoh Login Page</title>
+<title>Jonel Login Page</title>
 </head>
 <body>
 <div class="container">
@@ -56,7 +56,7 @@ if ( $failure !== false ) {
 </form>
 <p>
 <br>
-username: ninyoh@yahoo.com
+username: elreyjonel@gmail.com
 <br>
 password: meow123
 </p></br>
